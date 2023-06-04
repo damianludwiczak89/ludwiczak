@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>
+            Damian Ludwiczak
+        </title>
+    </head>
+    <body>
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        <div class="row">
+            <div class="sidebar col-lg-2 col-md-3">
+                <h2>Damian Ludwiczak</h2>
+                <div>
+                    <a id="about_button" href="#">About</a>
+                </div>
+                <div>
+                    <a id="projects_button" href="#">Projects</a>
+                </div>
+                <div>
+                    <a id="certs_button" href="#">Harvard Certificates</a>
+            </div>
+
+        </div>
+        <div class="main col-lg-10 col-md-9">
+
+        <div id="introduction" class="section">
+            <h3>Welcome,</h3><br>
+            <p>
+                My name is Damian Ludwiczak, I am from Konin, Poland. I am a self-taught software engineer. 
+                In 2012, I graduated from Państwowa Wyższa Szkoła Zawodowa w Konine in the field of English Filology with Informational Technology.
+                My strong sides are Python, Django, JavaScript, HTML, CSS, and SQL. 
+            </p>
+            <p>
+                For the last couple of years I have been working in a transport company, where I have been promoted to office manager.
+                I manage a fleet of over 20 trucks, supervise transports, truck service schedule etc. I also stay in touch with customers,
+                negotiate with them in foreign language, inform about deliveries. Besides that, I distribute tasks to the office team.
+            </p>
+            <p>
+                When in 2022 I found my passion for coding and computer science, I decided to change careers, and become a self-taught
+                software engineer. I did my own research and set my learning path. I participated in a series of Harvard's courses called CS50.
+                My whole learning has been in English. I see programming as an never-ending journey to keep getting better and improving
+                my skills.
+            </p>
+            <p>
+                Being a self-taught defines some characteristics as a person. I am highly motivated, self-disciplined and willing to learn.
+                Additionally, my experience as an office manager in a transport company helped me develops soft skills like communication,
+                teamwork, time-management etc. Personally, I am an open and positive person.
+            </p>
+        </div>
+
+        <div id="projects" class="section">
+            Projects:
+            <ul>
+                <li><a href="#" id="hangman_button">Hangman</a></li>
+                <li><a href="#" id="fit_button">FitProject</a></li>
+                <li><a href="#" id="truck_button">TruckRaport</a></li>
+
+            </ul>
+            <div id="hangman_desc">
+                <h3>Hangman</h3>
+                Traditional pen-and-paper game created using with Python with Django framework with emphasis on JavaScript
+            </div>
+            <div id="fit_desc"> <h3>FitProject</h3>
+                Web-application with several tools for users to get fit, stay fit, keep track of their progress,
+                manage training plans, diets and many more. Created using Python with Django framework with an SQL database
+            </div>
+            <div id="truck_desc">
+                <h3>TruckRaport</h3>
+                Web-application for transport companies to generate weekly or monthly raports on performed deliveries for a chosen period.
+                Created using Python with Django framework with an SQL database
+            </div>
+
+        </div>
+
+        <div id="certs" class="section">
+            Harvard Certificates:
+            <ul>
+                <li><a href="https://certificates.cs50.io/7c94e9e1-394f-41fb-91ce-38d0da07c541.pdf?size=letter">CS50's Introduction to Computer Science</a></li>
+                <li><a href="https://certificates.cs50.io/f62b247f-c277-4b0f-a39a-cd6e9a77e0b1.pdf?size=letter">CS50's Introduction to Programming with Python</a></li>
+                <li><a href="https://certificates.cs50.io/1a2d51c8-0b62-404b-a506-fb68517ab067.pdf?size=letter">CS50's Web Programming with Python and JavaScript</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </body>
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        
+        }
+        a {
+            font-weight: bold;
+        }
+        li:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+        
+            50% {
+                background-position: 100% 50%;
+            }
+        
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes move {
+            100% {
+                transform: translate3d(0, 0, 1px) rotate(360deg);
+            }
+    }
+    .background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(-90deg, #eca38d, #ca819d, #c1ddcc, #b2c780);
+            background-size: 400% 400%;
+            animation: gradient 180s ease infinite;
+            height: 100vh;
+    overflow: hidden;
+}
+
+.background span {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #583C87;
+    top: 63%;
+    left: 43%;
+    animation-duration: 21s;
+    animation-delay: -33s;
+    transform-origin: -14vw -24vh;
+    box-shadow: -40vmin 0 5.969736760665742vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #583C87;
+    top: 55%;
+    left: 32%;
+    animation-duration: 26s;
+    animation-delay: -26s;
+    transform-origin: 25vw -13vh;
+    box-shadow: 40vmin 0 5.194216357975474vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #FFACAC;
+    top: 69%;
+    left: 75%;
+    animation-duration: 53s;
+    animation-delay: -14s;
+    transform-origin: 17vw 9vh;
+    box-shadow: -40vmin 0 5.502063921260776vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #E45A84;
+    top: 38%;
+    left: 76%;
+    animation-duration: 9s;
+    animation-delay: -31s;
+    transform-origin: 11vw 0vh;
+    box-shadow: 40vmin 0 5.87639638721292vmin currentColor;
+}
+
+
+
+        .section {
+            margin-top: 30px;
+            margin-left: 30px;
+            box-sizing:content-box;
+            border-radius: 45px;
+            width: 750px;
+            height: 520px;
+            border: 20px solid #7d4242;
+            padding: 15px;
+            animation-name: appear;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        #introduction {
+
+        }
+
+        #projects {
+            
+        }
+
+        #certs {
+            
+        }
+
+        .sidebar {
+            padding: 15px;
+            padding-left: 55px;
+            font-size:large;
+            font-weight: bold;
+        }
+
+
+    </style>
+    <script>
+        const about = document.querySelector('#introduction');
+        const projects = document.querySelector('#projects');
+        const certs = document.querySelector('#certs');
+
+        const about_button = document.querySelector('#about_button');
+        const projects_button = document.querySelector('#projects_button');
+        const certs_button = document.querySelector('#certs_button');
+
+        const hangman_desc = document.querySelector('#hangman_desc');
+        const fit_desc = document.querySelector('#fit_desc');
+        const truck_desc = document.querySelector('#truck_desc');
+
+        const hangman_button = document.querySelector('#hangman_button');
+        const fit_button = document.querySelector('#fit_button');
+        const truck_button = document.querySelector('#truck_button');
+
+        projects.style.display = "none";
+        certs.style.display = "none";
+        hangman_desc.style.display = "none";
+        truck_desc.style.display = "none";
+        fit_desc.style.display = "none";
+
+        about_button.onclick = function () {
+            about.style.display = "block";
+            projects.style.display = "none";
+            certs.style.display = "none";
+        };
+
+        projects_button.onclick = function () {
+            about.style.display = "none";
+            projects.style.display = "block";
+            certs.style.display = "none";
+        };
+
+        certs_button.onclick = function () {
+            about.style.display = "none";
+            projects.style.display = "none";
+            certs.style.display = "block";
+        };
+
+        hangman_button.onclick = function () {
+            hangman_desc.style.display = "block";
+            truck_desc.style.display = "none";
+            fit_desc.style.display = "none";
+        };
+        fit_button.onclick = function () {
+            hangman_desc.style.display = "none";
+            truck_desc.style.display = "none";
+            fit_desc.style.display = "block";
+        };
+        truck_button.onclick = function () {
+            hangman_desc.style.display = "none";
+            truck_desc.style.display = "block";
+            fit_desc.style.display = "none";
+        };
+
+
+
+    </script>
+    
+</html>
