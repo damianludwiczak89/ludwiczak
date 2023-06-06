@@ -7,7 +7,7 @@
             Damian Ludwiczak
             
         </title>
-        <link rel="icon" href="icon.png" type="image/icon type">
+        <link rel="icon" href="media/favicon.png" type="image/icon type">
     </head>
     <body>
         <ul class="background">
@@ -26,7 +26,12 @@
 
         <div id="layout">
         <div id="menu">
-                <h2>Damian Ludwiczak</h2>               
+                <h2>Damian Ludwiczak</h2> 
+                <div id="icons">
+                    <a href="mailto:damian_konin@tlen.pl" target="_blank" rel="noopener noreferrer"><img src="media/email.png" alt="email" width="30" height="30" class="grow_img"></a>
+                    <a href="https://www.linkedin.com/in/damian-ludwiczak" target="_blank" rel="noopener noreferrer"><img src="media/linkedin.png" alt="linkedin" width="30" height="30" class="grow_img"></a>
+                    <a href="https://github.com/damianludwiczak89" target="_blank" rel="noopener noreferrer"><img src="media/github.png" alt="git" width="30" height="30" class="grow_img"></a>
+                </div>              
                     <a id="about_button" class="grow" href="#">About</a>   
                     <a id="projects_button" class="grow" href="#">Projects</a>
                     <a id="certs_button" class="grow" href="#">Harvard Certificates</a>
@@ -38,7 +43,7 @@
             <h3>Welcome,</h3>
             <p>
                 My name is Damian Ludwiczak, I am from Konin, Poland. I am a self-taught software engineer. 
-                In 2012, I graduated from Państwowa Wyższa Szkoła Zawodowa w Konine in the field of English Filology with Informational Technology.
+                In 2012, I graduated from Państwowa Wyższa Szkoła Zawodowa w Koninie in the field of English Filology with Informational Technology.
                 My strong sides are Python, Django, JavaScript, HTML, CSS, and SQL. 
             </p>
             <p>
@@ -61,24 +66,52 @@
 
         <div id="projects" class="section">
             Projects:
+            <div id="projects_lay">
             <ul>
-                <li><a href="#" id="hangman_button" class="grow">Hangman</a></li>
-                <li><a href="#" id="fit_button" class="grow">FitProject</a></li>
-                <li><a href="#" id="truck_button" class="grow">TruckRaport</a></li>
-
+                <li class="grow"><a href="#" id="hangman_button">Hangman</a></li>
+                <li class="grow"><a href="#" id="fit_button">FitProject</a></li>
+                <li class="grow"><a href="#" id="truck_button">TruckRaport</a></li>
+                
             </ul>
+            <img src="media/project.png" alt="project" width="80" height="80">
+        </div>
             <div id="hangman_desc">
                 <h3>Hangman</h3>
-                Traditional pen-and-paper game created using Python with Django framework with emphasis on JavaScript
+                <div id="technologies">Python, Django, JavaScript, HTML, CSS</div>
+                A single-page application depicting a traditional pen-and-paper game created using Python with Django 
+                framework with emphasis on JavaScript.
+                <div class="proj_buttons">
+                    <a href="https://hangmangame.pythonanywhere.com" target="_blank" rel="noopener noreferrer"><img src="media/www.png" alt="www" width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                    <a href="https://github.com/damianludwiczak89/hangman" target="_blank" rel="noopener noreferrer"><img src="media/github.png" alt="git" width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                </div>
+                <div class="section_image">
+                    <img src="media/hangman.png" alt="fit" width="155" height="155">
+                </div>
             </div>
             <div id="fit_desc"> <h3>FitProject</h3>
+                <div id="technologies">Python, Django, JavaScript, HTML, CSS, SQL</div>
                 Web-application with several tools for users to get fit, stay fit, keep track of their progress,
                 manage training plans, diets and many more. Created using Python with Django framework with an SQL database
+                <div>
+                    <a href="https://fitproject.pythonanywhere.com" target="_blank" rel="noopener noreferrer"><img src="media/www.png" alt="www" width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                    <a href="https://github.com/damianludwiczak89/fitproject" target="_blank" rel="noopener noreferrer"><img src="media/github.png" alt="git"  width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                </div>
+                <div class="section_image">
+                    <img src="media/fit.png" alt="fit" width="155" height="155">
+                </div>
             </div>
             <div id="truck_desc">
                 <h3>TruckRaport</h3>
+                <div id="technologies">Python, Django, JavaScript, HTML, CSS, SQL</div>
                 Web-application for transport companies to generate weekly or monthly raports on performed deliveries for a chosen period.
                 Created using Python with Django framework with an SQL database
+                <div class="proj_buttons">
+                    <a href="https://truckraport.pythonanywhere.com" target="_blank" rel="noopener noreferrer"><img src="media/www.png" alt="www" width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                    <a href="https://github.com/damianludwiczak89/truckraport" target="_blank" rel="noopener noreferrer"><img src="media/github.png" alt="git" width="60" height="60" class="grow_img" id="proj_buttons"></a>
+                </div>
+                <div class="section_image">
+                    <img src="media/truck.png" alt="truck" width="155" height="155">
+                </div>
             </div>
 
         </div>
@@ -86,10 +119,13 @@
         <div id="certs" class="section">
             Harvard Certificates:
             <ul>
-                <li><a class="grow" href="https://certificates.cs50.io/7c94e9e1-394f-41fb-91ce-38d0da07c541.pdf?size=letter">CS50's Introduction to Computer Science</a></li>
-                <li><a class="grow" href="https://certificates.cs50.io/f62b247f-c277-4b0f-a39a-cd6e9a77e0b1.pdf?size=letter">CS50's Introduction to Programming with Python</a></li>
-                <li><a class="grow" href="https://certificates.cs50.io/1a2d51c8-0b62-404b-a506-fb68517ab067.pdf?size=letter">CS50's Web Programming with Python and JavaScript</a></li>
+                <li class="grow"><a target="_blank" rel="noopener noreferrer" href="https://certificates.cs50.io/7c94e9e1-394f-41fb-91ce-38d0da07c541.pdf?size=letter">CS50's Introduction to Computer Science</a></li>
+                <li class="grow"><a target="_blank" rel="noopener noreferrer" href="https://certificates.cs50.io/f62b247f-c277-4b0f-a39a-cd6e9a77e0b1.pdf?size=letter">CS50's Introduction to Programming with Python</a></li>
+                <li class="grow"><a target="_blank" rel="noopener noreferrer" href="https://certificates.cs50.io/1a2d51c8-0b62-404b-a506-fb68517ab067.pdf?size=letter">CS50's Web Programming with Python and JavaScript</a></li>
             </ul>
+            <div class="cert_image">
+                <img src="media/cert.png" alt="cert" width="155" height="155">
+            </div>
         </div>
 
     </div>

@@ -5,17 +5,18 @@
     to {
         opacity: 1;
     }
-
 }
+
 a {
     font-weight: bold;
 }
-.grow:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
+.grow_img:hover {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
 }
-li:hover {
+
+.grow:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -24,6 +25,31 @@ li:hover {
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+
+#proj_buttons {
+    padding: 10px;
+}
+
+#technologies {
+    font-size: 1.7vh;
+    margin-bottom: 5px;
+}
+
+.section_image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cert_image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#projects_lay {
+    display: flex;
+    justify-content: space-between;
 }
 @keyframes gradient {
     0% {
@@ -50,11 +76,12 @@ body {
     height: auto;
     min-height: 520px;
     border: 20px solid #7d4242;
-    font-size: 2,4vh;
+    font-size: 2,6vh;
     padding: 15px;
     animation-name: appear;
     animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards;   
+
 }
 
 #introduction {

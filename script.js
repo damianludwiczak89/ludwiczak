@@ -26,9 +26,13 @@ about_button.onclick = function () {
     about.style.display = "block";
     projects.style.display = "none";
     certs.style.display = "none";
+    
 };
 
 projects_button.onclick = function () {
+    hangman_desc.style.display = "none";
+    truck_desc.style.display = "none";
+    fit_desc.style.display = "none";
     about.style.display = "none";
     projects.style.display = "block";
     certs.style.display = "none";
