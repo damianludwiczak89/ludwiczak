@@ -7,9 +7,27 @@
     }
 }
 
-a {
+.link {
     font-weight: bold;
+    position: relative;
+    text-decoration: none; 
 }
+
+.link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust as needed */
+    left: 0;
+    width: 0;
+    height: 2px; /* Adjust thickness as needed */
+    background-color: #6c2727; /* Adjust color as needed */
+    transition: width 0.3s ease-in-out; /* Add transition for width */
+  }
+  
+  .link:hover::before {
+    width: 100%; /* Expand width to create the underline effect */
+  }
+
 .grow_img:hover {
     transform: scale(1.15);
     -webkit-transform: scale(1.15);
@@ -80,8 +98,11 @@ body {
     animation-name: appear;
     animation-duration: 5s;
     animation-fill-mode: forwards;   
-
+    transition: border-color 1s ease-in-out;
 }
+.section:hover {
+    border-color: #6c2727; /* Set the new border color on hover */
+  }
 
 #introduction {
     font-size: 2.4vh;
