@@ -1,5 +1,3 @@
-
-const about = document.querySelector('#introduction');
 const projects = document.querySelector('#projects');
 const certs = document.querySelector('#certs');
 
