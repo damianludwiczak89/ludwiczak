@@ -53,6 +53,10 @@ body {
     font-size: 1.7vh;
 }
 
+.project_desc {
+    font-size: 2.2vh;
+}
+
 .section_image {
     display: flex;
     justify-content: flex-end;
@@ -93,12 +97,12 @@ body {
     height: auto;
     min-height: 520px;
     border: 20px solid #7d4242;
-    font-size: 2,6vh;
+    font-size: 2.2vh;
     padding: 15px;
     animation-name: appear;
     animation-duration: 5s;
     animation-fill-mode: forwards;   
-    transition: border-color 1s ease-in-out;
+    transition: border-color 0.5s ease-in-out;
 }
 .section:hover {
     border-color: #6c2727; /* Set the new border color on hover */
