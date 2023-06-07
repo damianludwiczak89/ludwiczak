@@ -38,6 +38,8 @@ body {
 .section_image {
     display: flex;
     justify-content: flex-end;
+    margin: 10px;
+    
 }
 
 .cert_image {
@@ -88,7 +90,20 @@ body {
 }
 
 #projects {
+
     line-height: 3.5vh;
+    position: relative;
+}
+
+.project_desc {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    z-index: 1;
 }
 
 #certs {

@@ -17,9 +17,7 @@ const truck_button = document.querySelector('#truck_button');
 
 projects.style.display = "none";
 certs.style.display = "none";
-hangman_desc.style.display = "none";
-truck_desc.style.display = "none";
-fit_desc.style.display = "none";
+
 
 
 about_button.onclick = function () {
@@ -30,9 +28,7 @@ about_button.onclick = function () {
 };
 
 projects_button.onclick = function () {
-    hangman_desc.style.display = "none";
-    truck_desc.style.display = "none";
-    fit_desc.style.display = "none";
+
     about.style.display = "none";
     projects.style.display = "block";
     certs.style.display = "none";
@@ -44,19 +40,15 @@ certs_button.onclick = function () {
     certs.style.display = "block";
 };
 
-hangman_button.onclick = function () {
-    hangman_desc.style.display = "block";
-    truck_desc.style.display = "none";
-    fit_desc.style.display = "none";
-};
-fit_button.onclick = function () {
-    hangman_desc.style.display = "none";
-    truck_desc.style.display = "none";
-    fit_desc.style.display = "block";
-};
-truck_button.onclick = function () {
-    hangman_desc.style.display = "none";
-    truck_desc.style.display = "block";
-    fit_desc.style.display = "none";
-};
 
+var buttons = document.querySelectorAll('.project_button');
+var divs = document.querySelectorAll('.project_desc');
+
+buttons.forEach(function(button, index) {
+    button.addEventListener('click', function() {
+      divs.forEach(function(div) {
+        div.classList.remove('active');
+      });
+      divs[index].classList.add('active');
+    });
+  });
