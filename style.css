@@ -63,10 +63,6 @@ body {
     animation-fill-mode: forwards;   
 }
 
-.section_image {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .cert_image {
     display: flex;
@@ -122,6 +118,10 @@ body {
     line-height: 3.5vh;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
 #certs {
     line-height: 3.5vh;
 }
