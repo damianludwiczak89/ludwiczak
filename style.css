@@ -48,6 +48,11 @@ body {
 
 }
 
+#intro_heading {
+    display: flex;
+    justify-content: space-between;
+}
+
 #proj_buttons {
     padding: 10px;
 }
