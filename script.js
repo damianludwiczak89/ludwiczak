@@ -28,6 +28,7 @@ menu.forEach(function(button, index) {
         hangman_desc.style.display = "none";
         truck_desc.style.display = "none";
         fit_desc.style.display = "none";
+        sudoku_desc.style.display = "none";
     });
   });
 
