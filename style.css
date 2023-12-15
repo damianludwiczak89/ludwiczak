@@ -161,14 +161,9 @@ body {
     }
 }
 
-.background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-
-    overflow: hidden;
+body {
+    background: linear-gradient(-90deg, #efb6a6, #fffb8f, #ca954f, #fff7e1d4);
+                        background-size: 400% 400%;
+                        animation: gradient 180s ease infinite;
+                        height: 100vh;
 }
