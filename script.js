@@ -1,5 +1,7 @@
 const projects = document.querySelector('#projects');
 const certs = document.querySelector('#certs');
+const exp = document.querySelector('#experience');
+const istqb = document.querySelector('#istqb');
 
 const hangman_desc = document.querySelector('#hangman_desc');
 const fit_desc = document.querySelector('#fit_desc');
@@ -10,6 +12,8 @@ certs.style.display = "none";
 hangman_desc.style.display = "none";
 truck_desc.style.display = "none";
 fit_desc.style.display = "none";
+exp.style.display = "none";
+istqb.style.display = "none";
 
 
 

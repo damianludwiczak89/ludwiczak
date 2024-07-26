@@ -132,7 +132,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-#certs {
+#certs, #istqb {
     line-height: 3.5vh;
 }
 
