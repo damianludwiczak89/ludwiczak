@@ -153,6 +153,16 @@ body {
     display: flex;
 }
 
+#istqb-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#istqb-img {
+    border-radius: 45px;
+}
+
 @keyframes animate {
     0%{
     transform: translateY(0) rotate(0deg);
