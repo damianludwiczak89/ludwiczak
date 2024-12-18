@@ -3,18 +3,10 @@ const certs = document.querySelector('#certs');
 const exp = document.querySelector('#experience');
 const istqb = document.querySelector('#istqb');
 
-const hangman_desc = document.querySelector('#hangman_desc');
-const fit_desc = document.querySelector('#fit_desc');
-const truck_desc = document.querySelector('#truck_desc');
-
 projects.style.display = "none";
 certs.style.display = "none";
-hangman_desc.style.display = "none";
-truck_desc.style.display = "none";
-fit_desc.style.display = "none";
 exp.style.display = "none";
 istqb.style.display = "none";
-
 
 
 const sections = document.querySelectorAll('.section');
@@ -33,6 +25,7 @@ menu.forEach(function(button, index) {
         truck_desc.style.display = "none";
         fit_desc.style.display = "none";
         sudoku_desc.style.display = "none";
+        buddy_desc.style.display = "none";
     });
   });
 
