@@ -178,13 +178,11 @@ body {
 @media (max-width: 768px) {
 
     #menu {
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
-       
-        height: auto;
         padding: 10px;
-
+        z-index: 2;
     }
 
     #menu h2 {
@@ -204,9 +202,10 @@ body {
     }
 
     .section {
-        margin-top: 50%;
-        min-height: 20%;
+        margin-top: 60%;
+        margin-left: -40%;
         border: none;
+        z-index: 1;
     }
 
     #istqb-img {
