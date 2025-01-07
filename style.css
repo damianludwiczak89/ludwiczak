@@ -6,6 +6,11 @@
         opacity: 1;
     }
 }
+#icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
 .link {
     font-weight: bold;
@@ -184,11 +189,7 @@ body {
         padding: 10px;
         margin-bottom: 10px;
     }
-    #icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+
 
     #menu h2 {
         display: none;
