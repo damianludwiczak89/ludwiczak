@@ -176,36 +176,27 @@ body {
     }
 }
 @media (max-width: 768px) {
+
     #menu {
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
-       
-        height: auto;
         padding: 10px;
     }
+
     #menu h2 {
         display: none;
     }
-    #icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 10px;
-    }
-    #menu a {
-        padding-left: 5px;
-        font-size: 1.8vh;
-    }
+
     .section {
-        margin-top: 50%;
-        min-height: 20%;
+        margin-top: 60%;
+        margin-left: -35%;
         border: none;
     }
+
     #istqb-img {
         border-radius: 15px;
     }
     body {
         font-size: 1rem;
     }
-}
