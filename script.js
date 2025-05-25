@@ -25,7 +25,7 @@ menu.forEach(function(button, index) {
         truck_desc.style.display = "none";
         fit_desc.style.display = "none";
         sudoku_desc.style.display = "none";
-        buddy_desc.style.display = "none";
+        kup_desc.style.display = "none";
     });
   });
 
